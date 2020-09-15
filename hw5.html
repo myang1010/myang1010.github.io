@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>White Sugar Sponge Cake Recepie</title>
+<meta name="description" content="White sugar sponge cake is a classic yet disappearing Cantonese recipe ">
+<link rel="stylesheet" type="text/css" href="css3clock.css" />
+</head>
+<body style="background-image:url('bubble.png')"> 
+    <header><h1 style="font-style: italic;text-align: center;">All About White Sugar Sponge Cake</h1></header>
+
+    <!-- Below is the JavaScript from JavaSript Kit website. It shows the analog clock -->    
+    <div id="liveclock" class="outer_face" >
+        <div class="marker oneseven"></div>
+        <div class="marker twoeight"></div>
+        <div class="marker fourten"></div>
+        <div class="marker fiveeleven"></div>
+    
+        <div class="inner_face">
+        <div class="hand hour"></div>
+        <div class="hand minute"></div>
+        <div class="hand second"></div>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    var $hands = $('#liveclock div.hand')
+    
+    window.requestAnimationFrame = window.requestAnimationFrame
+                                   || window.mozRequestAnimationFrame
+                                   || window.webkitRequestAnimationFrame
+                                   || window.msRequestAnimationFrame
+                                   || function(f){setTimeout(f, 60)}
+    
+    function updateclock(){
+        var curdate = new Date()
+        var hour_as_degree = ( curdate.getHours() + curdate.getMinutes()/60 ) / 12 * 360
+        var minute_as_degree = curdate.getMinutes() / 60 * 360
+        var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
+        $hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
+        $hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
+        $hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
+        requestAnimationFrame(updateclock)
+    }    
+    requestAnimationFrame(updateclock)  
+    </script>
+    <p style="text-align: left;"> The clock above is the JavaScript I chose from JavaScript Kit</p> 
+
+    <section>
+        <h2 style="text-align: right;">White sugar sponge cake story</h2>
+        <article>
+            <h3>What is white sugar sponge cake</h3>
+            <p><span style="font-size:x-large;">W</span>hite sugar sponge cake, b&aacute;i t&aacute;ng gāo in Mandarin or baak tong gou in Cantones, is actually 
+                hard to come by these days. This steamed cake, made from just a few ingredients has long been a favorite of young kids.
+            </p>
+            <p><span style="font-size:x-large;">W</span>hat's the magic of bai tang gao? <br>
+            JUST 4 INGREDIENTS! All you need for this recipe is regular white granulated sugar, rice flour, active dry yeast, and a bit of oil for brushing (plus some water!).   
+            </p>
+        </article>
+    </section>
+<footer style="border: blue 3px solid; background-image:url('wallpaper.jpeg');background-repeat:repeat-x; background-position:top;">
+    <article>
+        <h3>Ingredients to make white sugar sponge cake</h3>
+        <p>150 g rice flour (1 1/4 cups)</p>
+        <p>80 g water (plus 200g, divided; note that when measuring water, g = ml)</p>
+        <p>100 g white granulated sugar (1/2 cup)</p>
+        <p>3 g active dry yeast (about 1 teaspoon; can substitute instant yeast)</p>
+        <p>30 g lukewarm water (30 ml; about 2 tablespoons)</p>
+    </article>
+</footer>
+</body>
+</html>
