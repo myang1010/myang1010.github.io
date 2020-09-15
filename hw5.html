@@ -31,7 +31,7 @@
                                    || window.mozRequestAnimationFrame
                                    || window.webkitRequestAnimationFrame
                                    || window.msRequestAnimationFrame
-                                   || function(f){setTimeout(f, 60)}
+                                   || function(f){setInterval(f, 60)}
     
     function updateclock(){
         var curdate = new Date()
