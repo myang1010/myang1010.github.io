@@ -1,0 +1,79 @@
+@keyframes myfirst
+{
+from {background: cyan; }
+to {background: green; color: white; }
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {background: cyan;}
+to {background: green; color: white; }
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {background: cyan;}
+to {background: green; color: white; }
+} 
+
+#header
+{
+animation: myfirst 5s forwards;
+-moz-animation: myfirst 5s forwards; /* Firefox */
+-webkit-animation: myfirst 5s forwards; /* Safari and Chrome */
+} 
+
+@keyframes banner
+{
+0%   {background: red(223, 220, 220);; left:0; top:0;}
+100% {background: rgb(223, 220, 220);; left: calc(100% - 200px); top:0;}
+}
+
+@-moz-keyframes banner /* Firefox */
+{
+0%   {background: red(223, 220, 220);; left:0; top:0;}
+100% {background: rgb(223, 220, 220);; left: calc(100% - 200px); top:0;}
+}
+
+@-webkit-keyframes banner /* Safari and Chrome */
+{
+0%   {background: red; left:0; top:0;}
+100% {background: rgb(223, 220, 220);; left: calc(100% - 200px); top:0;}
+} 
+#banner
+{
+width:200px;
+height:50px;
+background:red;
+position:relative;    
+animation: banner 8s linear 1s infinite alternate;
+/* Firefox: */
+-moz-animation: banner 8s linear 1s infinite alternate;
+/* Safari and Chrome: */
+-webkit-animation: banner 8s linear 1s infinite alternate;
+}  
+
+
+body{ background:yellow; }
+a:link, a:visited, a:hover {color: blue; }
+
+h1 {margin:0;
+    color:red;
+    text-align: center;
+}
+h2 {color:blue;
+    text-align: right;
+    font-style:italic;
+} 
+h2:last-of-type { font-size: 3em; margin:0;} 
+h3{text-align :right; color: red;}
+
+div > p::first-letter{ font-weight:normal;font-size: medium; font-style: normal  !important;}
+.banner p{ padding: 15px; text-align: center;}
+
+p::first-letter { font-size: 3em; font-style: italic;font-weight: bold;}
+
+
+table {background-color: cyan; border-collapse: separate; border-spacing: 5px;  text-align: center; font-weight: bold;}
+td {padding: 10px}
+td + td{text-align: left;font-weight: normal;}
