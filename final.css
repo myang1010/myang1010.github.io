@@ -9,7 +9,7 @@ main p::first-letter {color:brown; font-weight:bold;}
 figure{margin: 5px 10px; float: right }
 figcaption{text-align: center;}
 footer{ text-align:center; font-size: 80%; }
-footer p{margin-top: 10px; margin-bottom:0}
+footer p{margin-top: 10px; margin-bottom:0; text-align: center;}
 
 nav {
     text-align: left
