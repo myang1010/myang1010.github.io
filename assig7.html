@@ -44,10 +44,9 @@ input[type="submit"], input[type="reset"] {
   padding: 0.7em;
   border: 0;
 }
-/* 
-input[type="number"] {
-  width: 2.5em;
-} */
+input[type="number"], input[type="date"] {
+  width: 570px;
+}
 h1 { text-align: center; font-style: italic; color: gold; }
 </style>
 </head>
@@ -56,9 +55,9 @@ h1 { text-align: center; font-style: italic; color: gold; }
 <form class="form1" action="#" method="post">
   <label for="firstname">First Name</label><input type="text" required name="firstname" id="firstname" maxlength="15" size ="80"><br>
   <label for="lastname">Last Name</label><input type="text" name="lastname" id="lastname" maxlength="25" size = "80"><br>
-  <label for="age">Age</label><input type="number" name="age" id="age" min="18" max="65" style="width: 570px"><br>
+  <label for="age">Age</label><input type="number" name="age" id="age" min="18" max="65"><br>
   <label for="email">Email</label><input type="email" required name="email" id="email" size = 80>
-  <label for="dateofmembership">Date Of Membership</label><input type="date" name="dateofmembership" id="dateofmembership" max="2021-12-31" style="width: 570px">
+  <label for="dateofmembership">Date Of Membership</label><input type="date" name="dateofmembership" id="dateofmembership" max="2021-12-31">
   <label for="reward">Choose Your Reward</label>
     <input type="text" name="reward" id="reward" list="rewardlist" size = 80>
     <datalist id="rewardlist">
