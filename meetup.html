@@ -1,45 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
 <title>Meet Up Report</title>
 <meta name="description" content="This is the report of MeetUp">
-<meta charset="utf-8">
-
+<link rel="stylesheet" type="text/css" href="final.css">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 <style>
-@import url("others.css");
+    ul {margin:0; padding-left: 40px}
+    dl {padding-left: 20px;}
+    .wrapper {
+        grid-template-rows: 4% 92% 4%;
+        height:max-content;
+    }
+    #record {float: right; margin-left:10px; caption-side: bottom; text-align: center;}
+    #gallery {position: relative;}
+    #gallery ul {list-style-type:none; width: 400px; }
+    #gallery li { display: inline; padding: 10px; } 
+    #gallery img {border-style: none; }
+    #gallery a { text-decoration: none; font-style: italic; color: #333; }
+    #gallery span {display: none;}
+    #gallery a:hover span {display: block; position: absolute; top: 10px; left: 400px; text-align: center;} 
 </style>
 </head>
-
-    
+ 
 <body>
-<div id="wrapper">
-<header>
-    <h1>Meet Up Report</h1>
-    <nav>
+<div class = "wrapper"> 
+    <header class= "grid-area grid-area-1">
+        <h1>Meet Up Report</h1> 
+    </header>
+    <nav class="grid-area grid-area-2">     
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="students.html">Students</a></li>
-            <li><a href="faculty.html">Faculty</a></li>
+            <!-- <li><a href="homework1.html">Home</a></li> -->
+            <li><a href="final.html">Home</a></li>
+            <li><a href="assignments.html" target="_self">Assignments</a></li>
+            <li><a href="meetup.html" target ="_self">MeetUp</a></li>
+            <li><a href="contact.html" target="_self">Contact</a></li>
         </ul>
     </nav>
-</header>
-    
-    <main>
-        <h2>Our Mission</h2>
-        <h3>Learn and Grow</h3>
-        
-        <figure>
-            <img src="student.jpg" alt = "stuent's back typing on a computer"/>
+    <main class="grid-area grid-area-3">
+        <p> I attended two MeetUp classes. </p>
+        <ul>
+            <li> Designing for Others: Why UX Design Is So Important on March 25. </li>
+            <li> Leave Photoshop Behind: Free, Online Alternatives for Image Creation and Editing on April 14.</li>
+        </ul>
+        <br>
+
+        <h2>Designing for Others: Why UX Design Is So Important</h2>
+        <p>Hack Reactor: Learn to Code, Hosted by Jacod Knopf</p>
+        <p>Here's <a href= "https://www.meetup.com/hackreactor/events/276667490" target="_self">the link for this record</a>. </p>
+        <figure id = record>
+            <img src="UX_design_record.png" width="250" height="150" alt = "I was attending the virtual class">
+            <figcaption>This is the screenshot</figcaption>
         </figure>
+        <p>This is a one time session hosted by Hack Reactor. I chose this class because I wanted to know more about UX design. The title why it is so important attracted me.</p>
+        <p>Some benefits from this session,</p>
+        <p>What's User Experince Design?</p>
+        <p>"User experince encompasses all aspects of the end-user's interaction with the company, its services, and its products."</p>
+        <p>User Experince(UX) desgin is the process desgin teams use to create products that provide meaningful and relevant
+            experinces to users. This involves the design of the entire process of acquiring and integrating the product, 
+            including aspects of branding, design, usability and function.
+        </p>
+        <div id="gallery">
+            <ul>
+              <li><a href="create_meaningful_experiences.png"><img src="create_meaningful_experiences.png" width="150" height="100" alt="create meaningful experiences">
+                <span><img src="create_meaningful_experiences.png" width="400" height="300" alt="create meaningful experiences"><br>Create meaningful experiences</span></a>
+              </li>
+              <li><a href="ux_research_cycle.png"><img src="ux_research_cycle.png" width="150" height="100" alt="ux design cycle">
+                <span><img src="ux_research_cycle.png" width="400" height="300" alt="ux design cycle"><br>UX design cycle</span></a>
+              </li>
+             </ul>
+            </div>
+        <br style="clear:both;">
         
-        <p>We offer the environment so students can learn, grow and get a job position in the current competitive job market! This is our main mission!</p>
+        <p>How is UX Importat</p>
+        <ul>
+            <li>Connects users to your product</li>
+            <li>Better brand awareness</li>
+            <li>Increase revenue growth/business success</li>
+            <li>Can change behavior on a massive scale</li>
+            <li>Look at Apple, Amazon, Netflix, etc.</li>
+        </ul>
+        <p>The Trends in 2021</p>
+        <ul>
+            <li>Designing for virtual experinces with AR and VR</li>
+            <li>Evolution of computational design and AI</li>
+            <li>Focus on inclusive design</li>
+            <li>Data and design integration</li>
+            <li>Specialized UX professionals</li>
+        </ul>      
+        <br>
         
-        <p>Our faculty goes through a very intensive process to be hired as we want to offer the best to our students to produce the best!</p>
-    </main>
-        
-    <footer>
-        <p>Making our community stronger&emsp;
-        <a href="/assignments">CNIT 132 Assignments</a></p>
+        <h2>Leave Photoshop Behind: Free, Online Alternatives for Image Creation and Editing</h2>
+        <p>Code Cafe: Hosted by Code Cafe Coding and Tech at Indianapolis Public Library</p>
+        <p>Here's <a href= "https://www.meetup.com/join-code-cafe/events/277197665" target="_self">the link for this record</a></p>
+        <figure id = record>
+            <img src="photoshop_tools_session_record.png" width="250" height="150" alt = "I was attending the virtual class">
+            <figcaption>This is the screenshot</figcaption>
+        </figure>
+        <p>For this one, I couldn't take the screenshot of me attending the class. The host didn't show that page,
+            and I minimize the host window. If you look carefully you could see the "Talking: Henry Herbst-Indy PL" 
+            text on the upper right corner. That's the Librarian Henry Herbst from Indianapolis Public Library who was giving the class.
+        </p>
+
+        <p>It's inetresting to learn some free and easy to use photoshop tools. In this session the librarianin introduced two awesome tools,
+            one is Pixlr, and the other one is Photopea. They are free, online alternatives for image
+            creation and editing.
+        </p>
+        <p>Why not Photoshop? 
+            Because Photoshop is incredibly expensive! It requires a monthly subscription fee in order to use and a lot of unnecessary features for most</p>
+
+        <p>Some Common Terms:</p>
+        <dl>
+            <dt>Canvas</dt><dd>the window that holds an image</dd> 
+            <dt>Layer</dt><dd>each one is like a separate sheet of paper; the one on top obscures the one below</dd>
+            <dt>Crop</dt><dd>trim a portion of an image</dd>
+            <dt>Filter</dt><dd>automated way to alter an image (like blurring or coloring it)</dd>
+        </dl>   
+
+        <p>Pixlr</p>
+        <ul>
+            <li>More suited for image-editing and collages</li>
+            <li>User-oriented; offers templates and stock images</li>
+            <li>Two versions! Both are online. Both are free.</li>
+            <li>Pixlr X for beginners, simplified and intuitive</li>
+            <li>Pixlr E for more experienced users who want better control</li>
+        </ul>   
+        <p>Here is the Pixlr Resources:
+            <a href="https://blog.pixlr.com/support/" target="_self">Pixlr FAQ</a>      
+        </p> 
+        <p>Photopea</p>
+        <ul>
+            <li>Similar functionality as Photoshop</li>
+            <li>Many of the filters and options of Photoshop</li>
+            <li>Including the ability to adjust lighting and color</li>
+            <li>Compatible with a wide variety of image files</li>
+        </ul>
+        <p>Here is the Photopea Resources:
+            <a href="https://www.photopea.com/learn/" target="_self">Learn</a> Photopea 
+            and <a href="https://www.photopea.com/tuts/">Tutorials</a>
+        </p>
+        <p>Personally I like Photopea better.</p>
+
+    </main>       
+    <footer class="grid-area grid-area-4">
+        <p>Here is the link to go to the <a href="assignments.html">Assignments</a> page</p>
+        <p>Email me at <a href="mailto:mking28@mail.ccsf.edu">mking28@mail.ccsf.edu</a>.</p>
+        <p>Copyright © 2021</p>
     </footer>
 </div>
 </body>
