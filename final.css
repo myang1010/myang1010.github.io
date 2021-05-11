@@ -43,3 +43,9 @@ nav ul li{
 .grid-area-2 { grid-area: s1; padding: 10px 35px}
 .grid-area-3 { grid-area: mc; padding: 3px 25px;}
 .grid-area-4 { grid-area: footer; background-color: #dad1c8;}
+
+@media print { 
+    .grid-area-1, .grid-area-2, .grid-area-4, #record, .floatright{ display: none; }
+    .wrapper { grid-template-columns: 0% 100%; grid-template-rows: 0% 100% 0%;}
+    body, .wrapper { background-color: white; color:black; }    
+} 
