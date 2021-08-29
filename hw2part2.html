@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Week2 Part2 Homework</title>
+<meta charset="utf-8">
+<meta name="description" content="week2 part2 homework">
+<style> 
+  header{
+    background-color: orangered;
+    height:50px;
+    width:auto;
+    padding-top: 5px;
+  }
+  footer{
+    background-color: greenyellow;
+    height:70px;
+    padding-top: 5px;
+  } 
+  p{
+    text-align:center;
+  } 
+  .flex-container {
+    display: flex;
+    height: auto;
+  }
+  .flex-item {
+    width: 25%;
+    height: 20vh;
+    padding: 10px 10px;
+  }
+  .flex-item:nth-of-type(1) {
+    flex-grow: 0;
+    order: 1;   
+    background-color: yellow;
+    }
+  .flex-item:nth-of-type(2) {
+    flex-grow: 0;
+    order:4;  
+    background-color: pink;
+  }
+  .flex-item:nth-of-type(3) {
+    flex-grow: 0;
+    order:2;  
+    background-color: blue;
+    color: white;
+  }
+  .flex-item:nth-of-type(3) > p {
+    text-align: left;
+  }
+  .flex-item:nth-of-type(4) {
+    flex-grow: 0;
+    order:3;  
+    background-color: rgb(223, 132, 223);
+    color: rgb(4, 114, 187) ;
+  }
+  .flex-item:nth-of-type(4) > p {
+    text-align: left;
+  }
+</style>  
+</head>    
+<body>
+    <header>
+      <p>Name of Company</p>
+    </header>
+    <div class="flex-container">
+      <div class="flex-item"><p>This is the aside 1</p></div>
+      <div class="flex-item"><p>This is the aside 2</p></div>  
+      <div class="flex-item"><p>This is the main article of my page! 
+          This is the main content of the page!In a 3-column layout, it should be shown in the middle between aside1 and aside2!</p></div>
+      <div class="flex-item"><p>This column was created to have some content as a challenge to adapt to the old 3-column layout to a 4-column layout</p></div>             
+    </div> 
+    <footer>
+        <p>This is the footer<br>Copyright &copy; 2017</p>
+    </footer>
+</body>
+</html>
