@@ -1,0 +1,47 @@
+* { background-color:#C0DEED;}
+
+h1 {
+    top: 10%;
+    left: 40%;
+    position: fixed;
+    background-color: transparent ;
+    } 
+
+#sky {
+position:fixed;
+top:0px;left:0px;
+width:100%;
+height:100%;
+text-align:center;
+margin:0px;
+padding:0px;
+background-color:#C0DEED;
+background: url(clouds.png) center top repeat-x;
+padding-top:300px;
+padding-bottom:10px;
+animation: cloud 10s linear infinite;
+}
+@keyframes cloud{
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
+}
+
+#banner { 
+    width: 20%;
+    height: 20px; 
+    text-align:center;
+    padding: 20px 0; 
+    position: relative; 
+    animation: banner 20s linear forwards; 
+}
+@keyframes banner{
+0%   {left:0; top:0; color: blue; }
+50%  {left: calc(100% - 250px); top:0; }
+100% {background: transparent; left: calc(50% - 100px); top:0;}
+}
+
+@media (prefers-reduced-motion) {
+    .cloud, .banner {
+        animation: none;
+      }
+  }

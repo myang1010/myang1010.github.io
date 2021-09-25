@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CSS Shapes</title>
+   <meta charset="utf-8">
+   <meta name="description" content="using CSS shapes">
+   <style>
+	body { background-color: beige; }
+    main {max-width: 600px; margin: 10px auto; }
+    .house { float: left; shape-outside: url(house.png); shape-margin: 10px;}
+   </style>
+</head>
+<body>
+<h1>Homework 6 - CSS Shapes</h1>
+<main>
+  <img src="house.png" alt="purple drop" class="house">
+  <p>This is a paragraph that will start on the right side of the house 
+      as the house has received the CSS class of house and that class 
+      has the float:left CSS property being applied to it. The idea is 
+      that we will modify that class to include CSS shape and you will 
+      see that the these two paragraphs will then follow the shape of that house, 
+      following the curve of the house instead of just following a rectangular shape 
+      of the width and height of the image.</p>
+  <p>This is the second paragraph and this paragraph will also follow the float of 
+      the image until the end of its height. When the height of the image is achieved, 
+      the paragraph will then continue normally starting from the left of the browser 
+      and continuing to the right and down.</p>
+</main>
+</body>
+</html>
