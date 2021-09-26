@@ -41,7 +41,12 @@ animation: cloud 10s linear infinite;
 }
 
 @media (prefers-reduced-motion) {
-    .cloud, .banner {
+    .banner {
         animation: none;
-      }
+        left: calc(50% - 100px); 
+        top:0;
+    }
+    .cloud{
+        animation: none;
+    }
   }
